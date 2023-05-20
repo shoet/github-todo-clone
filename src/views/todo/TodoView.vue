@@ -33,53 +33,53 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="multi-view__header" ref="header">
-    <div class="multi-view__title">
-      GitHub TODO Clone
-    </div>
+<div class="todo-view__header" ref="header">
+  <div class="todo-view__title">
+    GitHub TODO Clone
   </div>
-  <div class="multi-view__todo" v-bind:style="diffHeaderHeight">
-    <div class="multi-view__todo-list">
-      <div class="multi-view__todo-list__title">
-        Todo
-      </div>
-      <TodoList/>
+</div>
+<div class="todo-view__todo" v-bind:style="diffHeaderHeight">
+  <div class="todo-view__todo-list">
+    <div class="todo-view__todo-list__title">
+      Todo
     </div>
-    <div class="multi-view__todo-list">
-      <div class="multi-view__todo-list__title">
-        InProgress
-      </div>
-      <TodoList/>
-    </div>
-    <div class="multi-view__todo-list">
-      <div class="multi-view__todo-list__title">
-        Done
-      </div>
-      <TodoList/>
-    </div>
+    <TodoList/>
   </div>
+  <div class="todo-view__todo-list">
+    <div class="todo-view__todo-list__title">
+      InProgress
+    </div>
+    <TodoList/>
+  </div>
+  <div class="todo-view__todo-list">
+    <div class="todo-view__todo-list__title">
+      Done
+    </div>
+    <TodoList/>
+  </div>
+</div>
 </template>
 
 <style scoped>
-.multi-view__header {
+.todo-view__header {
   height: 4rem;
 }
-.multi-view__title {
+.todo-view__title {
   color: white;
   font-size: 2rem;
 }
-.multi-view__content {
+.todo-view__content {
   flex-grow: 1;
   display: flex;
 }
-.multi-view__todo {
+.todo-view__todo {
   display: flex;
   padding-left: 30px;
   padding-right: 30px;
   border: 1px solid rgba(128, 128, 128, 0.817);
   background-color: rgb(39, 43, 50);
 }
-.multi-view__todo-list {
+.todo-view__todo-list {
   flex-grow: 1;
   margin: 5px;
   border: 1px solid rgba(128, 128, 128, 0.817);
@@ -89,7 +89,7 @@ onMounted(() => {
   background-color: black;
   border-radius: 3px;
 }
-.multi-view__todo-list__title {
+.todo-view__todo-list__title {
   font-weight: bold;
   padding: 8px 0px 0px 10px;
   color: white;
